@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header to display Time and HighScore -->
+    <header>
+        <button id="highscore">Highscore</button>
+        <div id="time"><h1></h1></div>
+    </header>
+    
+    <main>
+        <!-- Button to start quiz -->
+        <button class="button1" id="startbtn">start</button>
+        <!-- Form for user to input their name when quiz is done -->
+        <form id ="form" onSubmit="return false;">
+            <h1>Game Over</h1>
+            <p> Please enter your Initials.</p>
+            <input class ="input1" id="get-value" type="text" name="Highscore name" maxlength="2" placeholder="Enter Name"/>
+            <button class="button2" id="submitbutton" type="button">Submit</button>
+        </form>
+        <!-- section to display Highscore -->
+        <section id="highscore-display"> </section>
+        <!-- Quiz container, quiz takes place here -->
+        <section class = "container">
+            <div class="row">
+                <div><h1></h1></h3></div>
+            </div>
+            <div class="row">
+                <div id="question1">
+                    <h2 class="text" id="score"></h2>
+                    <div class="text" id="question1"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div  id="answer1" data-number="0">
+                    <div class="text" id="answer1" ></div>
+                </div>
+                <div id="answer2" data-number="1">
+                    <div class="text"id="answer2" ></div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="answer3" data-number="2">
+                    <div class="text" id="answer3" ></div>
+                </div>
+                <div id ="answer4" data-number="3">
+                    <div class="text" id="answer4" ></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer displays current score and if the user was wrong or correct -->
+    <footer>
+        <h3>Current Score: <span id="Score"></span></h3>
+        <h3>You Were: <span id="indicator"></span></h3>
+
+    </footer>
+      
+
+
+
+        <script src="./assets/script.js"></script>
+    
+</body>
+</html>
