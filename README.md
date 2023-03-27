@@ -21,7 +21,7 @@ WHEN the game is over
 THEN I can save my initials and score
 
 ## Description
-
+THe users will have a series of question to test their knowlege on coding terms and langauge. The goal is to have the highest scores possible. 
 
 ## Usage
 Usage of this assigment is to allow me to pratice my skills. THe app itself is a quiz application where I can input in questions and correct answers for the users. 
